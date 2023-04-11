@@ -4,6 +4,10 @@ import Card from './Card.js';
 const CardList = ( { robots }) => {
 
     const cardComponent = robots.map((user, i) => {
+        // This code is to check if ErrorBoundary is working.
+        // if (true) {
+        //     throw new Error('NOOOOOOO!');
+        // }
         return (
             <Card 
                 key={i} 
